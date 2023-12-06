@@ -17,7 +17,7 @@ These instructions will get you a copy of the project up and running on your loc
 1. Clone the repo:
    ```bash
    git clone https://github.com/SumukhaNadig/real-estate-dms.git
-   cd backend
+   cd real-estate-dms/backend
 
 2. Install npm packages:
    ```bash
@@ -40,7 +40,7 @@ These instructions will get you a copy of the project up and running on your loc
 
 1. Once the above repo is cloned, cd into frontend directory and install the packages
    ```bash
-   cd frontend
+   cd real-estate-dms/frontend
    npm install
 
 2. Start the frontend with
