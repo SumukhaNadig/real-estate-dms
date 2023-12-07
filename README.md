@@ -27,6 +27,8 @@ These instructions will get you a copy of the project up and running on your loc
    ```bash
    node src/app.js
 
+4. Add the URI to your MongoDB DB as well as the secret key that will be used for auth in .env file
+
 ### API Endpoints
 1. GET /properties - Retrieve all properties.
 2. GET /properties/:id - Retrieve a single property by ID.
