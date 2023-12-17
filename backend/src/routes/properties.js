@@ -4,7 +4,7 @@ const Property = require('../models/Property');
 const auth = require('../middleware/auth');
 const router = express.Router();
 
-router.get('/properties', async (req, res) => {
+router.get('/', async (req, res) => {
     try {
         const properties = await Property.find();
         res.json(properties);
@@ -25,7 +25,7 @@ router.get('/:id', async (req, res) => {
     }
 });
 
-router.post('/properties', [auth, [
+router.post('/', [auth, [
     body('title').not().isEmpty().withMessage('Title is required'),
     body('description').isLength({ min: 10 }).withMessage('Description must be at least 10 characters long'),
 ]], async (req, res) => {
